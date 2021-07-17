@@ -1,0 +1,316 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Styles or Utilities  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 70px;
+    background-color: #ffffff;
+    width: 1050px;
+}
+
+/* League header */
+.league-info {
+    display: flex;
+    background-color: #2D25A0;
+}
+
+.league-title {
+    margin-left: 156px;
+    margin-top: 80px;
+}
+
+.league-banner {
+    margin-right: 140px;
+    margin-top: 49px;
+    margin-bottom: 86px;
+}
+
+.league-title i {
+    margin-left: 8px;
+}
+
+.league-title h1 {
+    width: 485px;
+    height: 230px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 80px;
+}
+
+.league-title .link-button {
+    text-decoration: none;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #fff;
+
+}
+
+.league-title .link-button:hover {
+    color: orangered;
+    background-color: #000;
+}
+
+.league-banner img {
+    width: 556px;
+    height: 488px;
+}
+
+/*  Players part */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.players img {
+    width: 300px;
+    height: 256;
+}
+
+.player {
+    margin-right: 30px;
+    margin-bottom: 27px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-name {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+}
+
+.player-info {
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* League Footer  */
+.logo-info {
+
+    margin: auto;
+    margin-top: 158px;
+    width: 483.87px;
+    height: 213px;
+}
+
+.logo-info img {
+    width: 450px;
+    height: 110px;
+}
+
+.logo-info .social-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-info .social-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    background-color: lightgrey;
+    color: #969BAB;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.logo-info p {
+    text-align: center;
+}
+
+/* Highlights part */
+
+.highlights-info {
+    display: flex;
+}
+
+.highlights-title {
+    width: 466px;
+    height: 309px;
+    margin-left: 182px;
+    margin-top: 224px;
+}
+
+.highlights-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.highlights-title p {
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+.highlights-title .watch-button {
+    text-decoration: none;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #fff;
+}
+
+.highlights-title .watch-button:hover {
+    color: orangered;
+    background-color: #000;
+}
+
+.highlights-banner video {
+    width: 500px;
+    height: 400px;
+    margin: 165px 156px 158px 69px;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 10px #999;
+}
+
+.subscribe-form h2 {
+    font-size: 36px;
+    color: #20D389;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subscribe-form p {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.subscribe-form hr {
+    width: 70px;
+    color: #999;
+    margin: 25px auto;
+}
+
+.subscribe-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    outline-color: #20D389;
+    margin-bottom: 25px;
+}
+
+.subscribe-form button {
+    width: 100%;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #20D389;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #196b49;
+}
+
+/*------------- Media Queries------------- */
+/* -------Mobile Devices-------- */
+@media only screen and (max-width:688px) {
+
+    .league-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .league-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+        width: 310px;
+        height: 120px;
+
+
+    }
+
+    .league-banner img {
+        width: 400px;
+        margin-right: 0;
+    }
+
+    .container {
+        width: 360px;
+
+
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        width: 300px;
+        height: 426px;
+        margin: auto;
+    }
+
+    .highlights-info {
+        margin-top: 5000px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .highlights-title {
+        margin-left: 50px;
+        width: 319px;
+        margin-top: 100px;
+
+    }
+
+    .highlights-banner video {
+        width: 300px;
+        margin-top: 0px;
+
+    }
+
+    .subscribe-form {
+        width: 300px;
+        margin-top: -50px;
+
+
+    }
+
+    .logo-info {
+        margin-top: 100px;
+
+    }
+
+    .logo-info img {
+        width: 250px;
+        margin-left: 50px;
+    }
+
+    .logo-info .social-icon,
+    .logo-info p {
+
+        margin-left: -100px;
+    }
+
+
+}
